@@ -22,9 +22,16 @@ describe('nameInverter', function() {
     assert.equal(nameInverter(inputName), expectedOutput);
   });
 
-  it('should return a last-name, first-name when passed a fisrt and last name', function() {
-    const inputName = "name ";
-    const expectedOutput = "name";
+  it('should return a last-name, first-name when passed a first and last name', function() {
+    const inputName = "name lastname";
+    const expectedOutput = "lastname, name";
+    assert.equal(nameInverter(inputName), expectedOutput);
+  });
+
+  //Stretch
+  it('should return a last-name, first-name when passed a first and last name with extra whitespace around', function() {
+    const inputName = "name lastname ";
+    const expectedOutput = "lastname, name";
     assert.equal(nameInverter(inputName), expectedOutput);
   });
 });
