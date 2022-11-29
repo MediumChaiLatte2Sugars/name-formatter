@@ -21,4 +21,10 @@ describe('nameInverter', function() {
     const expectedOutput = "name";
     assert.equal(nameInverter(inputName), expectedOutput);
   });
+
+  it('should return a last-name, first-name when passed a fisrt and last name', function() {
+    const inputName = "name ";
+    const expectedOutput = "name";
+    assert.equal(nameInverter(inputName), expectedOutput);
+  });
 });
