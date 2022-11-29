@@ -4,11 +4,12 @@ const nameInverter = function(name) {
     return name;
   }
 
+
   // Single name case (not all whitespace)
   // if (name.length > 0 && name.trim().length > 0){
   //  return name;
   // }
-  return name;
+  return name.trimEnd();
   }
 
 module.exports = nameInverter;

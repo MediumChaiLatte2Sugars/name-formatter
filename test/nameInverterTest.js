@@ -15,4 +15,10 @@ describe('nameInverter', function() {
     const expectedOutput = "name";
     assert.equal(nameInverter(inputName), expectedOutput);
   });
+
+  it('should return a single name when passed a single name with additional whitespace', function() {
+    const inputName = "name ";
+    const expectedOutput = "name";
+    assert.equal(nameInverter(inputName), expectedOutput);
+  });
 });
