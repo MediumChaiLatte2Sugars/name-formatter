@@ -1,0 +1,23 @@
+{
+  "name": "nameformatter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nameInverter.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MediumChaiLatte2Sugars/name-formatter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MediumChaiLatte2Sugars/name-formatter/issues"
+  },
+  "homepage": "https://github.com/MediumChaiLatte2Sugars/name-formatter#readme"
+}
