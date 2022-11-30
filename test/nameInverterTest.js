@@ -52,4 +52,10 @@ describe('nameInverter', function() {
     const expectedOutput = "Dr. Pichael, Michael";
     assert.equal(nameInverter(inputName), expectedOutput);
   });
+
+  it('should return a honorific last-name, first-name when passed honorific first-name last-name with extra spaces around the words', function() {
+    const inputName = " /Dr. Michael Pichael ";
+    const expectedOutput = "Dr. Pichael, Michael";
+    assert.equal(nameInverter(inputName), expectedOutput);
+  });
 });
