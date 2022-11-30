@@ -1,3 +1,4 @@
+const { expect } = require('chai');
 const chai = require('chai');
 const assert = chai.assert;
 
@@ -54,8 +55,13 @@ describe('nameInverter', function() {
   });
 
   it('should return a honorific last-name, first-name when passed honorific first-name last-name with extra spaces around the words', function() {
-    const inputName = " /Dr. Michael Pichael ";
+    const inputName = " Dr. Michael Pichael ";
     const expectedOutput = "Dr. Pichael, Michael";
     assert.equal(nameInverter(inputName), expectedOutput);
+  });
+
+  it('should throw an error when name is undefined', function() {
+    const inputName = undefined;
+    assert.throws(() => { nameInverter(inputName) }, Error);
   });
 });

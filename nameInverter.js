@@ -4,6 +4,11 @@ const nameInverter = function(name) {
     return name;
   }
 
+  // undefined case
+  if (name === undefined){
+    throw new Error("Error! Name is undefined!");
+  }
+
   // First and last-name case
   if (name.trim().split(" ").length === 2 && !name.includes(".")){
     let firstLastNameArray = name.trim().split(" ");
