@@ -35,7 +35,7 @@ const nameInverter = function(name) {
   // if (name.length > 0 && name.trim().length > 0){
   //  return name;
   // }
-  return name.trimEnd();
+  return name.trim();
   }
 
 module.exports = nameInverter;
