@@ -5,7 +5,7 @@ const nameInverter = function(name) {
   }
 
   // First and last-name case
-  if (name.trim().split(" ").length === 2){
+  if (name.trim().split(" ").length === 2 && !name.includes(".")){
     let firstLastNameArray = name.trim().split(" ");
     return `${firstLastNameArray[1]}, ${firstLastNameArray[0]}`;
   }
@@ -13,6 +13,11 @@ const nameInverter = function(name) {
   // Single honorific case
   if (name.trim().split(".").length === 2 && !name.trim().split(".")[1]){
     return "";
+  }
+
+  // Honorific first-name
+  if (name.trim().split(".").length === 2){
+    return name.trim();
   }
 
   // Single name case (not all whitespace)
