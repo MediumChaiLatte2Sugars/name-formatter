@@ -1,4 +1,4 @@
-const { expect } = require('chai');
+// const { expect } = require('chai');
 const chai = require('chai');
 const assert = chai.assert;
 
@@ -62,6 +62,8 @@ describe('nameInverter', function() {
 
   it('should throw an error when name is undefined', function() {
     const inputName = undefined;
-    assert.throws(() => { nameInverter(inputName) }, Error);
+    assert.throws(() => {
+      nameInverter(inputName);
+    }, Error);
   });
 });
